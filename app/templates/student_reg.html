@@ -7,11 +7,12 @@
     <title>REGISTRATION</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sans bg-gradient-to-r from-red-500 to-blue-500 flex justify-center">
-    <div class="items flex flex-col mt-2 ">
-        <div class="x bg-white border border-gray-300 pl-2 pr-2 rounded-lg shadow-md items-center">
+<body class="text-white font-sans bg-transparent from-red-500 to-blue-500 flex  bg-cover object-cover bg-center h-screen"
+style="background-image:url('static/images/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg')">
+    <div class="items flex flex-col ml-20">
+        <div class="x  pl-2 pr-2 rounded-lg shadow-md items-center">
             <form method="POST" class="space-y-2" action="/student_registration">
-                <a class="flex justify-end" href="/">BACK</a>
+                
                 {{ form.csrf_token }}
                 <ul class="text-center text-2xl font-bold">BEST</ul>
                 <ul class="text-center ">IT ACADEMY</ul>
@@ -23,30 +24,33 @@
                 <div class="flex flex-col gap-4">
                     <div class="form-group">
                         {{ form.username.label }}
-                        {{ form.username(class="w-full p-2 rounded border border-gray-300",placeholder="Enter your name" )}}
+                        {{ form.username(class="w-full  text-black p-2 rounded-2xl border border-gray-300",placeholder="Enter your name" )}}
                     </div>
                     <div class="form-group">
                         {{ form.email.label }}
-                        {{ form.email(class="w-full p-2 rounded border border-gray-300",placeholder="enter your email id") }}
+                        {{ form.email(class="  text-black w-full p-2 rounded-2xl border border-gray-300",placeholder="enter your email id") }}
                     </div>
                     <div class="form-group">
                         {{ form.password.label }}
-                        {{ form.password(class="w-full p-1 rounded border border-gray-300",placeholder="enter more than 6 characters") }}
+                        {{ form.password(class="w-full  text-black p-1 rounded-2xl border border-gray-300",placeholder="enter more than 6 characters") }}
                     </div>
                     <div class="form-group">
                         {{ form.confirm_password.label }}
-                        {{ form.confirm_password(class="w-full p-2 rounded border border-gray-300",placeholder="enter more than 6 characters") }}
+                        {{ form.confirm_password(class="w-full p-2  text-black rounded-2xl border border-gray-300",placeholder="enter more than 6 characters") }}
                     </div>
                     <div class="form-group">
                         {{ form.course.label }}
-                        {{ form.course(class="w-full p-2 rounded border border-gray-300") }}
+                        {{ form.course(class=" text-black w-full p-2 rounded-2xl border border-gray-300") }}
                     </div>
                     <div class="flex justify-center ">
-                        <button type="submit" class="bg-rose-600 text-white rounded hover:bg-green-600 mb-2">SIGN-UP</button>
+                        <button type="submit" class="bg-rose-600 text-white rounded px-6 py-2  hover:bg-green-600 mb-2">SIGN-UP</button>
                     </div>
                 </div>
             </form>
         </div>
+    </div>
+    <div class="flex items-center ml-96 mt-36">
+        <a class="flex justify-end text-white  px-6 py-2 rounded hover:bg-rose-600 rotate-button" href="/">BACK</a>
     </div>
 </body>
 </html>

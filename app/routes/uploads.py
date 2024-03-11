@@ -1,7 +1,7 @@
 from flask import flash, redirect, request, session, Blueprint, send_from_directory, jsonify,current_app,Response
 from werkzeug.utils import secure_filename
 import os
-from app import Config
+from app.app import Config
 from app.models.models import Faculty, File
 from app.extensions.db import db
 from datetime import datetime
