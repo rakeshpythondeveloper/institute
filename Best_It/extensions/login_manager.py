@@ -1,7 +1,7 @@
 # app/extensions/login_manager.py
 
 from flask_login import LoginManager
-from app.models.models import User, Faculty
+from Best_It.models.models import User, Faculty
 
 login_manager = LoginManager()
 

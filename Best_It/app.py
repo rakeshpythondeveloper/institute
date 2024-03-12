@@ -1,9 +1,9 @@
 # app/__init__.py
 from flask import Flask
-from app.extensions.db import db
-from app.configure import Config
-from app.extensions.login_manager import login_manager
-from app.routes import main, student, faculty, stu_course, uploads
+from Best_It.extensions.db import db
+from Best_It.configure import Config
+from Best_It.extensions.login_manager import login_manager
+from Best_It.routes import main, student, faculty, stu_course, uploads
 
 def create_app():
     server = Flask(__name__)
