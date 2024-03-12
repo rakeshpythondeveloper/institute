@@ -1,9 +1,9 @@
 from flask import Blueprint, render_template, redirect, flash, session, request
-from app.forms.forms import FacultyForm, FacultyLoginForm
-from app.oper.oper import check_faculty_exists, add_faculty
+from Best_It.forms.forms import FacultyForm, FacultyLoginForm
+from Best_It.oper.oper import check_faculty_exists, add_faculty
 from flask_bcrypt import Bcrypt
 from flask_login import login_user
-from app.models.models import Faculty
+from Best_It.models.models import Faculty
 
 bcrypt = Bcrypt() 
 faculty_bp = Blueprint('faculty', __name__)

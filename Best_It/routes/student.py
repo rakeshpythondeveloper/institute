@@ -1,11 +1,11 @@
 from flask import Blueprint, render_template, redirect, flash, request,session,jsonify,url_for,current_app
-from app.forms.forms import Student_RegistrationForm, StudentLoginForm
-from app.oper.oper import check_user_exists, add_user
+from Best_It.forms.forms import Student_RegistrationForm, StudentLoginForm
+from Best_It.oper.oper import check_user_exists, add_user
 from flask_bcrypt import Bcrypt
-from app.models.models import User
+from Best_It.models.models import User
 from flask_login import login_user,login_required,current_user
 import os
-from app.extensions.db import db
+from Best_It.extensions.db import db
 from werkzeug.utils import secure_filename
 from flask_wtf.csrf import generate_csrf
 

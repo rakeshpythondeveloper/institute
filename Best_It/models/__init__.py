@@ -1,1 +1,1 @@
-from .models import *
+from Best_It.models import *

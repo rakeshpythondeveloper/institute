@@ -1,6 +1,6 @@
 from flask import flash, session, redirect, render_template, Blueprint, current_app,send_from_directory,Response
 import os
-from app.oper.oper import get_user_course
+from Best_It.oper.oper import get_user_course
 from flask_wtf.csrf import generate_csrf
 from flask_login import login_required
 

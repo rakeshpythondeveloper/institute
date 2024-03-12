@@ -1,6 +1,6 @@
 # app/routes/oper.py
 
-from app.models.models import db, User, Faculty
+from Best_It.models.models import db, User, Faculty
 from flask import current_app
 
 def add_user(username,email, password, course,profile_image):
