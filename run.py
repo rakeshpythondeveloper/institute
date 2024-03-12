@@ -1,5 +1,5 @@
 
-from Best_It.Data import create_app
+from Best_It.app import create_app
 
 
 if __name__ == "__main__":    
